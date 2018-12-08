@@ -8906,6 +8906,7 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/11177f.pdf"&
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="180k"/>
+<part name="R6_2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="50k"/>
 </parts>
 <sheets>
 <sheet>
@@ -8978,6 +8979,7 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/11177f.pdf"&
 <instance part="R11" gate="G$1" x="22.86" y="48.26"/>
 <instance part="R12" gate="G$1" x="25.4" y="17.78" rot="R90"/>
 <instance part="R13" gate="G$1" x="38.1" y="48.26"/>
+<instance part="R6_2" gate="G$1" x="134.62" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -9097,6 +9099,9 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/11177f.pdf"&
 <wire x1="116.84" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="99.06" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R6_2" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="88.9" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<junction x="129.54" y="99.06"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9273,6 +9278,8 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/11177f.pdf"&
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="99.06" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
 <junction x="139.7" y="99.06"/>
+<pinref part="R6_2" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="88.9" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
